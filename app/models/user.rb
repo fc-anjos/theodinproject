@@ -1,6 +1,6 @@
 class User < ApplicationRecord
   acts_as_voter
-  before_create :enroll_in_foundations
+  # Should be enrolled in foundation by default
 
   devise :database_authenticatable, :registerable, :recoverable,
          :rememberable, :trackable, :validatable,
